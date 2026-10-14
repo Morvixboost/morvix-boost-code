@@ -27,7 +27,7 @@ class ChildPanelController extends Controller
             'domain' => $request->domain,
             'panel_name' => $request->panel_name,
             'markup_percentage' => $request->markup_percentage,
-            'api_key' => Str::random(32),
+            'api_token' => Str::random(60),
             'status' => 'active',
         ]);
 
